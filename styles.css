@@ -1,2 +1,24 @@
 
 /* Your CSS Code here. */
+.holder {
+    /* Establish the grid container */
+    display: grid;
+    
+    /* Set the total size of the grid */
+    width: 200px;
+    height: 200px;
+
+    /* Define two equal columns using the repeat function */
+    grid-template-columns: repeat(2, 1fr);
+    
+    /* Define two equal rows using the repeat function */
+    grid-template-rows: repeat(2, 1fr);
+}
+
+/* Optional: Adding some visual flair to see the items clearly */
+.item {
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
